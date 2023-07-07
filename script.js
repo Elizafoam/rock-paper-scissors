@@ -45,7 +45,24 @@ function playRound(playerSelection, computerSelection){
         }
     }
 }
-let playerSelection = "Scissors"
-let computer = getComputerChoice();
-console.log(computer);
-console.log(playRound(playerSelection, computer));
+
+function game(){
+    let score = [0, 0];
+    let round;
+    for(let i = 1; i <= 5; i++){
+        let playerSelection = prompt("Rock, Paper or Scissors?");
+        round = playRound(playerSelection, getComputerChoice());
+        console.log(round);
+        if(round.charAt(4) === "W"){
+            score[0] += 1;
+        }
+        else if (round.charAt(4) === "L"){
+            score[1] += 1;
+        }
+    }
+    if(score[0]> score[1]) console.log("You Won! C:");
+    else if(score[0] < score[1]) console.log("You Lost. :C"); 
+    else console.log("Its a tie. :|");
+}
+
+game();
