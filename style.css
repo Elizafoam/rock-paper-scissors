@@ -15,6 +15,32 @@ body {
     border-radius: 20px;
 }
 
+.options {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.choice {
+    background-color: #a5b5c7;
+    border-radius: 10px;
+    width: 175px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+}
+
+.rock img {
+    width: 130px;
+}
+
 #title {
     background-color: #355070;
     padding: 12px;
@@ -22,7 +48,7 @@ body {
 }
 
 #footer {
-    background-color: #f3f3f3;
+    background-color: #e1eaf0;
     color: #545974;
     position: fixed;
     bottom: 0px;
