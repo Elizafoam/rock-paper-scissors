@@ -1,5 +1,14 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monaco", ' Lucida Console', Courier, monospace;
+    color: #FBFBFF;
+}
+
 #background-video {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     object-fit: cover;
     position: fixed;
@@ -8,4 +17,17 @@
     top: 0;
     bottom: 0;
     z-index: -1;
+}
+
+#body {
+    background-color: #355070;
+    width: 78vh;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#title {
+    background-color: #355070;
+    padding: 12px;
+    border-radius: 20px;
 }
