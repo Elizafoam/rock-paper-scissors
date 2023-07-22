@@ -1,27 +1,16 @@
-#container {
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-family: "Monaco", ' Lucida Console', Courier, monospace;
     color: #FBFBFF;
-}
-
-#background-video {
-    height: 50vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+    font-family: "Monaco", Courier, monospace;
+    margin: 0;
 }
 
 #body {
     background-color: #355070;
-    width: 78vh;
+    width: 78vw;
     height: 70vh;
     border-radius: 20px;
 }
@@ -30,4 +19,14 @@
     background-color: #355070;
     padding: 12px;
     border-radius: 20px;
+}
+
+#footer {
+    background-color: #f3f3f3;
+    color: #545974;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    padding: 4px;
+    text-align: center;
 }
