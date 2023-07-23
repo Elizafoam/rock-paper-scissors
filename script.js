@@ -46,6 +46,8 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+
+
 function game(){
     const score = [0, 0];
     let round;
