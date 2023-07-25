@@ -74,6 +74,12 @@ img {
     border-radius: 20px;
 }
 
+.rock:hover , 
+.paper:hover ,
+.scissors:hover {
+    border: #ede2ff solid 5px;
+}
+
 #footer {
     background-color: #e1eaf0;
     color: #545974;

@@ -46,7 +46,12 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+const playerScore = document.getElementById('player-score');
+const computerScore = document.getElementById('computer-score');
 
+const rock = document.getElementByClassName('rock');
+const paper = document.getElementByClassName('paper');
+const scissors = document.getElementByClassName('scissors');
 
 function game(){
     const score = [0, 0];
