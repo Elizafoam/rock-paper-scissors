@@ -80,6 +80,27 @@ img {
     border: #ede2ff solid 5px;
 }
 
+#popup {
+    
+    background-color: #e6ecff;
+    width: 300px;
+    height: 300px;
+    border: solid 3px #ecf1ff;
+    border-radius: 9px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -165px;
+    position: absolute;
+}
+
+button {
+    color: white;
+    background-color: #355070;
+    border: solid 3px #304f75;
+    border-radius: 7px;
+}
+
 #footer {
     background-color: #e1eaf0;
     color: #545974;
