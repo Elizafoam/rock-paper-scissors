@@ -81,15 +81,18 @@ img {
 }
 
 #popup {
-    
+    display: none;
     background-color: #e6ecff;
-    width: 300px;
-    height: 300px;
+    width: 240px;
+    height: 220px;
+    padding: 40px;
     border: solid 3px #ecf1ff;
     border-radius: 9px;
+    color: black;
+    text-align: center;
     top: 50%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -170px;
     margin-top: -165px;
     position: absolute;
 }
