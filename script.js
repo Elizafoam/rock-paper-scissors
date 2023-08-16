@@ -1,5 +1,5 @@
 function getComputerChoice(){
-    let choice = Math.floor(Math.random() *3);
+    let choice = Math.floor(Math.random()*3);
 
     switch(choice){
         case 0:
@@ -46,18 +46,16 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-const playerScore = document.getElementById('#player-score');
-const computerScore = document.getElementById('#computer-score');
-const roundResult = document.getElementById('#result');
+const playerScore = document.getElementById('player-score');
+const computerScore = document.getElementById('computer-score');
+const roundResult = document.getElementById('result');
 
 const options = document.querySelectorAll('.choice');
 let playerSelection; 
 
 options.forEach(button => button.addEventListener('click', () => {
     playerSelection = button.getAttribute('id');
-    round = playRound(playerSelection, getComputerChoice());
-    alert(round)
-
+    roundResult.textContent = playRound(playerSelection, getComputerChoice());
 }));
 
 function game(){
@@ -74,9 +72,11 @@ function game(){
             score[1] += 1;
         }
     }
-    if(score[0]> score[1]) console.log("You Won! C:");
-    else if(score[0] < score[1]) console.log("You Lost. :C"); 
-    else console.log("Its a tie. :|");
+    console.log(getWinner(score[0], score[1]));
 }
 
-// game();
+function getWinner(playerScore, computerScore){
+    if(playerScore > computerScore) console.log("You Won! C:");
+    else if(playerScore < computerScore) console.log("You Lost. :C"); 
+    else console.log("Its a tie. :|");
+}
