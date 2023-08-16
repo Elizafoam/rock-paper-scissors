@@ -46,12 +46,19 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-const playerScore = document.getElementById('player-score');
-const computerScore = document.getElementById('computer-score');
+const playerScore = document.getElementById('#player-score');
+const computerScore = document.getElementById('#computer-score');
+const roundResult = document.getElementById('#result');
 
-const rock = document.getElementByClassName('rock');
-const paper = document.getElementByClassName('paper');
-const scissors = document.getElementByClassName('scissors');
+const options = document.querySelectorAll('.choice');
+let playerSelection; 
+
+options.forEach(button => button.addEventListener('click', () => {
+    playerSelection = button.getAttribute('id');
+    round = playRound(playerSelection, getComputerChoice());
+    alert(round)
+
+}));
 
 function game(){
     const score = [0, 0];

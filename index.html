@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script async src="script.js"></script>
     </head>
     <body>
         <h1 id='title'>ROCK PAPER SCISSORS</h1>
@@ -22,17 +22,18 @@
                     <div id="computer-score" class="value">0</div>
                 </div>
             </div>
+            <div id="result"> ' ~ May the Best Habibi Win! ~ ' </div>
             <h2 class="text">Choose Your Weapon</h2>
             <div class="options">
-                <div class="choice rock">
-                    <img  src="files/rock.png" alt="rock">
-                </div>
-                <div class="choice paper">
+                <button class="choice" id="rock">
+                    <img src="files/rock.png" alt="rock">
+                </button>
+                <button class="choice" id="paper">
                     <img src="files/paper.png" alt="rock">
-                </div>
-                <div class="choice scissors">
+                </button>
+                <button class="choice" id="scissors">
                     <img src="files/scissor.png" alt="rock">
-                </div>
+                </button>
             </div>
             <hr size="2" color="white">
             <div class=""></div>
